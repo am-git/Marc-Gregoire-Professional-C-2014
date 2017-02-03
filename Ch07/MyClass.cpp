@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "MyClass.h"
 
+using namespace ch07;
 
 MyClass::~MyClass()
 {
