@@ -15,9 +15,12 @@ namespace ch10
 		MSItem(const MSItem&);
 		MSItem& operator = (const MSItem&);
 
+		MSItem(MSItem&&) noexcept;
+		MSItem& operator = (MSItem&&) noexcept;
+
 	private:
-		//using std::vector;
 		std::vector<int> mVec = std::vector<int>(20);
+
 	};
 
 	void TestMS();
