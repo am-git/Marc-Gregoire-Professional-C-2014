@@ -6,14 +6,14 @@
 using namespace std;
 using namespace ch10;
 
-MSItem::MSItem(const MSItem& ms)
+MSItem::MSItem(const MSItem& ms) noexcept
 {
 	cout << "Copy constructor" << endl;
 	mVec = ms.mVec;
 }
 
 
-MSItem& MSItem::operator = (const MSItem& ms)
+MSItem& MSItem::operator = (const MSItem& ms) noexcept
 {
 	cout << "Assignment operator" << endl;
 	if(this == &ms)
@@ -25,14 +25,14 @@ MSItem& MSItem::operator = (const MSItem& ms)
 }
 
 
-MSItem::MSItem(MSItem&& ms)
+MSItem::MSItem(MSItem&& ms) noexcept
 {
 	cout << "Move constructor" << endl;
 	mVec = ms.mVec;
 
 }
 
-MSItem& MSItem::operator = (MSItem&& ms)
+MSItem& MSItem::operator = (MSItem&& ms) noexcept
 {
 	cout << "Move Assignment operator" << endl;
 	if (this == &ms)
@@ -44,7 +44,7 @@ MSItem& MSItem::operator = (MSItem&& ms)
 }
 
 
-void ch10::TestMS()
+void ch10::TestMS() noexcept
 {
 	vector<MSItem> mVec2;
 

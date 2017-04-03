@@ -12,8 +12,8 @@ namespace ch10
 		MSItem() = default;
 		virtual ~MSItem() = default;
 
-		MSItem(const MSItem&);
-		MSItem& operator = (const MSItem&);
+		MSItem(const MSItem&) noexcept;
+		MSItem& operator = (const MSItem&) noexcept;
 
 		MSItem(MSItem&&) noexcept;
 		MSItem& operator = (MSItem&&) noexcept;
@@ -23,5 +23,5 @@ namespace ch10
 
 	};
 
-	void TestMS();
+	void TestMS() noexcept;
 }
