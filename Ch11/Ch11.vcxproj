@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{9E2BBDBE-CD4F-4E25-89BD-3A4023910BEE}</ProjectGuid>
+    <ProjectGuid>{1D42094B-5B7A-4323-959C-CC83AE1D1D21}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Ch10</RootNamespace>
+    <RootNamespace>Ch11</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -140,25 +140,17 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Attributes.h" />
-    <ClInclude Include="ExplicitConversion.h" />
-    <ClInclude Include="MoveSemantics.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="UserDefinedLiterals.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Attributes.cpp" />
-    <ClCompile Include="Ch10.cpp" />
-    <ClCompile Include="ExplicitConversion.cpp" />
-    <ClCompile Include="MoveSemantics.cpp" />
+    <ClCompile Include="Ch11.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="UserDefinedLiterals.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
