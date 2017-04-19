@@ -10,5 +10,5 @@ void ExplicitConversion::Test() noexcept
 
 ExplicitConversion::operator int() const noexcept
 {
-	return 1;
+	return 1; //
 }
